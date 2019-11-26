@@ -29,7 +29,7 @@ public class HospitalListDAO {
 		return instance;
 	}
 	
-	public Connection getConnection() throws Exception{
+	private Connection getConnection() throws Exception{
 		return bds.getConnection();
 	}
 
@@ -74,6 +74,25 @@ public class HospitalListDAO {
 				}
 				return list;
 			}	
+		}
+	}
+	
+	public List<String> selectGu(String city) throws Exception{
+		String sql = "select gu from gutable where city=?";
+		List<String> result = new ArrayList<>();
+		try(
+				Connection con = this.getConnection();
+				PreparedStatement pstat = con.prepareStatement(sql);
+				){
+			pstat.setString(1, city);
+			try(
+					ResultSet rs = pstat.executeQuery();
+					){
+				while(rs.next()) {
+					result.add(rs.getString(1));
+				}
+				return result;
+			}
 		}
 	}
 	

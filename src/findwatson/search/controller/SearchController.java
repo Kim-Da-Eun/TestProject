@@ -21,25 +21,40 @@ public class SearchController extends HttpServlet {
 		String requestURI = request.getRequestURI();
 		String contextPath = request.getContextPath();
 		String cmd = requestURI.substring(contextPath.length());
+		request.setCharacterEncoding("UTF-8");
 		
-		if(cmd.contentEquals("/search.s")) {
-			
-		String input_city = request.getParameter("city");
-		String input_gu = request.getParameter("gu");
-		String input_dong = request.getParameter("dong");
-		String input_medicalAnimal= request.getParameter("medicalAnimal");
-		String input_medicalDept = request.getParameter("medicalDept");
-		String input_infoRegist = request.getParameter("infoRegist");
+		System.out.println("컨트롤러 : " + cmd);
 		
-		List<HospitalListDTO> list = new ArrayList<>();
 		try {
-		list = HospitalListDAO.getInstance().selectAll(input_city, input_gu, input_dong, input_medicalAnimal, input_medicalDept, input_infoRegist);
-		request.setAttribute("list", list);
-		request.getRequestDispatcher("index.jsp").forward(request, response);
+			if(cmd.contentEquals("/selectGu.s")) {
+				//지역 서울 선택시 구에 해당하는 정보 보내주기
+				String city = request.getParameter("city");
+				HospitalListDAO dao = HospitalListDAO.getInstance();
+				List<String> result = dao.selectGu(city);
+				
+				
+				
+			}else if(cmd.contentEquals("/search.s")) {
+				
+			String input_city = request.getParameter("city");
+			String input_gu = request.getParameter("gu");
+			String input_dong = request.getParameter("dong");
+			String input_medicalAnimal= request.getParameter("medicalAnimal");
+			String input_medicalDept = request.getParameter("medicalDept");
+			String input_infoRegist = request.getParameter("infoRegist");
+			
+			List<HospitalListDTO> list = new ArrayList<>();
+			
+			list = HospitalListDAO.getInstance().selectAll(input_city, input_gu, input_dong, input_medicalAnimal, input_medicalDept, input_infoRegist);
+			request.setAttribute("list", list);
+			request.getRequestDispatcher("index.jsp").forward(request, response);
+			
+		}
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
-	}
+		
+		
 
 	}
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
