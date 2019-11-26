@@ -6,17 +6,11 @@
 <head>
 <meta charset="UTF-8">
     <title>찾아줘 왓슨!</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     
     <style>
         *{box-sizing: border-box}
@@ -92,13 +86,13 @@
               </ol>
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src="resource/main/1.png" class="d-block w-100" alt="...">
+                  <img src="imgs/main/1.png" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="resource/main/2.png" class="d-block w-100" alt="...">
+                  <img src="imgs/main/2.png" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="resource/main/3.png" class="d-block w-100" alt="...">
+                  <img src="imgs/main/3.png" class="d-block w-100" alt="...">
                 </div>
               </div>
               <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
