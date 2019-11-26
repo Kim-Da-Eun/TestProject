@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
- <meta charset="UTF-8">
+<meta charset="UTF-8">
         <title>찾아줘 왓슨!</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -33,14 +33,10 @@
             img{
                 width:500px;
             }
-            .con{
-                text-align: center;
-            }
         </style>
 </head>
 <body>
- <form action=login. method=post>
-        <div class="container">
+<div class="container">
             <div class="row">
                 <div id="loginBtn" class="col-12 text-right">
                     <button class="btn btn-sm btn-outline-secondary">로그인</button>
@@ -81,34 +77,11 @@
                 </div>
             </div>
             <!--            -->
-            <div class=row>
-                <div class=col-12>
-                    <h1>로그인</h1>
-                    <hr>
-                </div>
-            </div>
 
-            <div class=row>
-                <div class="col-12 con">
-                    <input type=text id=id name=id>
-                    <br>
-                    <input type=text id=id name=id>
-                </div>
-            </div>
-            
-            <div class=row>
-                <div class="col-12 con">
-                  <a href="#">아이디 찾기</a> / 
-                  <a href="#">비밀번호 찾기</a>  
-                </div>
-            </div>
-            
-            <div class=row>
-                <div class="col-12 con">
-                    <button type="button" id=signUp>회원가입</button>
-                     <button type="button" id=login>로그인</button>
-                </div>
-            </div>
+
+
+
+
             <!--            -->
             <div class="row">
                 <div id="footer" class="col-12">
@@ -116,17 +89,5 @@
                 </div>
             </div>
         </div>
-        </form>
-        <script>
-            $("#signUp").on("click",function(){
-                location.href="";
-            })
-        $("#login").on("click",function(){
-            var result = confirm("로그인하시겠습니까?");
-            if(result){
-                $("#login").submit();
-            }
-        })
-        </script>
 </body>
 </html>

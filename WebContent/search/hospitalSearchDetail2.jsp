@@ -10,37 +10,11 @@
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-<script
-	src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script
 	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-
-<link
-	href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-	rel="stylesheet">
-<link rel="stylesheet"
-	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link
-	href="//maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-	rel="stylesheet" id="bootstrap-css">
 <script
-	src="//maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<script
-	src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
-<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-<script
-	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
-<script
-	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
-<link
-	href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote-bs4.css"
-	rel="stylesheet">
-<script
-	src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote-bs4.js"></script>
+	src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <style>
 * {
 	box-sizing: border-box
@@ -140,16 +114,14 @@ img {
 			<div class="row">
 				<div class="col-12">
 					<h1 name=hosName>병원 이름</h1>
-					<h5 name=mdfDate>
-						정보수정일 2019.01.01 Total.100
-					</h5>
+					<h5 name=mdfDate>정보수정일 2019.01.01 Total.100</h5>
 					<hr>
 				</div>
 			</div>
 
 			<div class=row>
 				<div class="col-6">
-					<img src="../resource/hospital/김포우리병원계열.jpg" id=hosImg>
+					<img src="../imgs/hospital/김포우리병원계열.jpg" id=hosImg>
 				</div>
 				<div class="col-6">
 					<div class="row hosIn1">
@@ -201,7 +173,7 @@ img {
 					<h2>후기 남기기</h2>
 					제목 : <input type="text" id=title name=title><br>
 					<textarea id="summernote" name=editordata></textarea>
-					<button type = button id=reviewSave></button>
+					<button type=button id=reviewSave></button>
 				</div>
 			</div>
 
