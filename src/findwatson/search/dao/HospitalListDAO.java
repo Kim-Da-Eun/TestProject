@@ -17,8 +17,8 @@ public class HospitalListDAO {
 	private HospitalListDAO() {
 		bds.setDriverClassName("oracle.jdbc.driver.OracleDriver");
 		bds.setUrl("jdbc:oracle:thin:@localhost:1521:xe");
-		bds.setUsername("manager");
-		bds.setPassword("manager");
+		bds.setUsername("watson");
+		bds.setPassword("watson");
 		bds.setInitialSize(30);
 	}
 	

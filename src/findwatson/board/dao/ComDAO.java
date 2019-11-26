@@ -17,8 +17,8 @@ public class ComDAO {
 	private ComDAO() {
 		bds.setDriverClassName("oracle.jdbc.driver.OracleDriver");
 		bds.setUrl("jdbc:oracle:thin:@localhost:1521:xe");
-		bds.setUsername("manager");
-		bds.setPassword("manager");
+		bds.setUsername("watson");
+		bds.setPassword("watson");
 		bds.setInitialSize(30);
 	}
 	private Connection getConnetion() throws Exception{

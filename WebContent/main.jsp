@@ -159,56 +159,48 @@
                            <option value="">지역선택</option>
                        </select>
                        <select name="" id="" class="col-12 col-sm-3">
-                           <option value="">지역선택</option>
+                           <option value="">구 선택</option>
                        </select>
-                       <select name="" id="" class="col-12 col-sm-3">
-                           <option value="">지역선택</option>
-                       </select>
+                   
                        <button class="col-auto m-auto btn btn-sm btn-outline-secondary">검색</button>
                   </div>
                   <div class="row mb-2">
                     <div class="col-12">진료동물</div>
                         <div class="col-3">
-                            <input type="checkbox">앵무새
+                            <input type="checkbox">새
                         </div>
                         <div class="col-3">
-                            <input type="checkbox">
+                            <input type="checkbox">물고기
                         </div>
                         <div class="col-3">
-                            <input type="checkbox">
+                            <input type="checkbox">햄스터
                         </div>
                         <div class="col-3">
-                            <input type="checkbox">
+                            <input type="checkbox">토끼
+                        </div>
+                        <div class="col-3">
+                            <input type="checkbox">고슴도치
+                        </div>
+                        <div class="col-3">
+                            <input type="checkbox">파충류
+                        </div>
+                        <div class="col-3">
+                            <input type="checkbox">곤충류
+                        </div>
+                        <div class="col-3">
+                            <input type="checkbox">기타
                         </div>
                   </div>
                     <div class="row mb-2">
                     <div class="col-12">진료시간</div>
-                        <div class="col-3">
-                            <input type="checkbox">야간진료
+                        <div class="col-4">
+                            <input type="checkbox">주간진료
                         </div>
-                        <div class="col-3">
-                            <input type="checkbox">
+                        <div class="col-4">
+                            <input type="checkbox">24시간진료
                         </div>
-                        <div class="col-3">
-                            <input type="checkbox">
-                        </div>
-                        <div class="col-3">
-                            <input type="checkbox">
-                        </div>
-                  </div>
-                  <div class="row mb-2">
-                    <div class="col-12">진료과목</div>
-                        <div class="col-3">
-                            <input type="checkbox">내과
-                        </div>
-                        <div class="col-3">
-                            <input type="checkbox">
-                        </div>
-                        <div class="col-3">
-                            <input type="checkbox">
-                        </div>
-                        <div class="col-3">
-                            <input type="checkbox">
+                        <div class="col-4">
+                            <input type="checkbox">야간응급진료
                         </div>
                   </div>
                </div>
